@@ -31,25 +31,25 @@ git clone https://github.com/lalyon/accessibleLightGUI.git
 
 Move the following files to your /var/www/html folder on the Pi.
 
-'''
+```
 ajax.php
 index.html
 lights.css
 lights.js
 all of the [color].py files
-'''
+```
 
 Start the web server and php on your Pi.
 
-'''
+```
 $ sudo service apache2 start
-'''
+```
 
 In a browser, go to your Raspberry Pi's local IP address to check if the server is up.
 
-'''
+```
 $ hostname -I
-'''
+```
 
 Finally, be sure to physically connect your Rapsberry Pi and Arduino via a USB connection.
 
@@ -62,51 +62,51 @@ Each colored circle is a button. When pressed, the button's HTML value attribute
 To add a new color:
 
 1. Add a new button to the index.html file
-'''
+```
 <button class="circle mynewcolor" name="mynewcolor" value="mynewcolor" accesskey="z">
 </button>
-'''
+```
 2. Add custom styling to lights.css for both mobile and desktop viewing
-'''
+```
 .mynewcolor {
   background: red;
   grid-row: 13;
 }
-'''
-'''
+```
+```
 .mynewcolor {
   background: red;
   grid-column: 1;
   grid-row: 4;
 }
-'''
+```
 3. Add a new case statement to the ajax.php file
-'''
+```
 case 'mynewcolor':
     mynewcolor();
     break;
-'''
+```
 4. Add a new function to the end of the ajax.php file
-'''
+```
 function mynewcolor() {
   exec("python mynewcolor.py");
   exit;
 }
-'''
+```
 5. Create a new python script in the same directory as your index.html file (probably /var/www/html)
-'''
+```
 import time
 import serial
 ser = serial.Serial('/dev/ttyACM0', 9600)
 time.sleep(1)
 ser.write('c') #change this to whatever you want
-'''
+```
 6. Amend your LightSerialCommands.ino file to include an if statement checking for your custom serial command from step 5.
-'''
+```
 else if (receivedChar == 'c') {
 high = strip.Color(255, 255, 255); //change these RGB values to whatever color you want
 }
-'''
+```
 7. Reflash your Arduino
 
 ## Author
