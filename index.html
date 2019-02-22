@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Slightly Accessible Light GUI</title>
+    <link rel="stylesheet" href="lights.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="tab_bar" id="tab_bar" role="navigation">
+      <button class="tab_btn" id="preset_tab_btn" accesskey="p"> Colors </button>
+      <button class="tab_btn" id="help_tab_btn" accesskey="h"> Help </button>
+    </div>
+
+      <div class="content" id="content">
+
+        <div class ="grid_container" id="content_presets" role="main" aria-live="polite">
+            <button type="submit" class="circle red" name="red" value="red">
+          </button>
+            <button class="circle orange" name="orange" value="orange">
+            </button>
+            <button class="circle yellow" name="yellow" value="yellow">
+            </button>
+            <button class="circle green" name="green" value="green">
+            </button>
+            <button class="circle blue" name="blue" value="blue">
+            </button>
+            <button class="circle navy" name="navy" value="navy">
+            </button>
+            <button class="circle pink" name="pink" value="pink">
+            </button>
+            <button class="circle forestgreen" name="forestgreen" value="forestgreen">
+            </button>
+            <button class="circle babyblue" name="babyblue" value="babyblue">
+            </button>
+            <button class="circle salmon" name="salmon" value="salmon">
+            </button>
+            <button class="circle hotpink" name="hotpink" value="hotpink">
+            </button>
+            <button class="circle mintgreen" name="mintgreen" value="mintgreen">
+            </button>
+
+        </div>
+
+
+        <div class="tab" id="content_custom" role="main" aria-live="polite">
+        </div>
+
+
+        <div class="tab" id="content_help" role="main" aria-live="polite">
+            <h4> Accessibility Features </h4>
+            <ul>
+              <li>Tab Control</li>
+              <li>Keyboard Shortcuts</li>
+              <li>Contacts Table with header tags</li>
+              <li>Captioned Images</li>
+              <li>ARIA live regions</li>
+            </ul>
+
+            <h4>Keyboard Shortcuts</h4>
+            <table class="table">
+              <tr>
+              <th>Shortcut</th>
+              <th>Accessibility Feature</th>
+            </tr>
+            <tr>
+              <td>p</td>
+              <td>Preset Colors Tab</td>
+            </tr>
+            <tr>
+              <td>c</td>
+              <td>Custom Colors Tab</td>
+            </tr>
+            <tr>
+              <td>h</td>
+              <td>Help Tab</td>
+            </tr>
+
+
+            </table>
+
+          <br></br>
+  			<figure>
+  			<a href="http://www.lukelyon.com">
+  			<img src="LinkedIn.png" alt="LinkedIn Logo" height="30" width="128">
+  			<figcaption>LinkedIn Logo for contacting developer</figcaption>
+  			</a>
+  			</figure>
+        <br></br>
+  			<figure>
+  			<a href="mailto:email@example.com">
+  			<img src="email.PNG" alt="Email Logo" heght="64" width="48">
+  			<figcaption>Email icon for contacting developer</figcaption>
+          </a>
+  			</figure>
+
+      </div>
+
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="lights.js"></script>
+  </body>
+</html>

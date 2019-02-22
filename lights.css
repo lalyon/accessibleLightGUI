@@ -1,0 +1,227 @@
+/* Style the tab */
+.tab_btn {
+ width: 50%;
+ background-color: #444;
+color: white;
+float: left;
+border: 5px;
+cursor: pointer;
+padding: 14px 4px;
+font-size: 17px;
+}
+
+/* For Mobile */
+.grid_container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 7%;
+  background-color: #fff;
+  color: #444;
+  justify-items: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.red {
+  background: red;
+  grid-row: 2;
+}
+
+.orange {
+  background: orange;
+  grid-row: 3;
+}
+
+.yellow {
+  background: yellow;
+  grid-row: 4;
+}
+
+.green {
+  background: lightgreen;
+  grid-row: 5;
+}
+
+.blue {
+  background: blue;
+  grid-row: 6;
+}
+
+.navy {
+  background: navy;
+  grid-row: 7;
+}
+
+.pink {
+  background: pink;
+  grid-row: 8;
+}
+
+.forestgreen {
+  background: darkgreen;
+  grid-row: 9;
+}
+
+.babyblue {
+  background: deepskyblue;
+  grid-row: 10;
+}
+
+.salmon {
+  background: darksalmon;
+  grid-row: 11;
+}
+
+.hotpink {
+  background: hotpink;
+  grid-row: 12;
+}
+
+.mintgreen {
+  background: MediumTurquoise;
+  grid-row: 13;
+}
+
+.tab_btn:hover {
+ background-color: #000;
+}
+
+.tab_btn:focus {
+ background-color: #eee;
+}
+
+.tab_bar{
+ overflow: hidden;
+ width: 100%;
+ background-color: #fff;
+ height: 10%;
+}
+table, th, td {
+ border: 1px solid black;
+}
+
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 33% 7%;
+    background-color: #fff;
+    color: #444;
+    justify-items: center;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .red {
+    background: red;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .orange {
+    background: orange;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .yellow {
+    background: yellow;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .green {
+    background: lightgreen;
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .blue {
+    background: blue;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .navy {
+    background: navy;
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .pink {
+    background: pink;
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .forestgreen {
+    background: darkgreen;
+    grid-column: 4;
+    grid-row: 3;
+  }
+
+  .babyblue {
+    background: deepskyblue;
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .salmon {
+    background: darksalmon;
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .hotpink {
+    background: hotpink;
+    grid-column: 3;
+    grid-row: 4;
+  }
+
+  .mintgreen {
+    background: MediumTurquoise;
+    grid-column: 4;
+    grid-row: 4;
+  }
+
+  .circle:hover {
+    opacity: 0.8;
+    border: 5px solid black;
+  }
+
+  .tab_btn:hover {
+   background-color: #000;
+  }
+
+  .tab_btn:focus {
+   background-color: #eee;
+  }
+
+  .tab_bar{
+   overflow: hidden;
+   width: 100%;
+   background-color: #fff;
+   height: 10%;
+  }
+
+  table, th, td {
+   border: 1px solid black;
+  }
+}
