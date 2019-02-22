@@ -2,6 +2,8 @@
 
 The code here includes a webpage and backend functions to support an Adafruit NeoPixel 32-LED-per-meter strip controlled by an Arduino and Raspberry Pi Zero W.
 
+Available at https://lalyon.github.io/accessibleLightGUI/
+
 ## Getting Started
 
 These instructions apply to an Arduino Uno, Raspberry Pi Zero W, and Adafruit NeoPixel strip. The setup requires that you've already hooked up your LEDs to power and the Arduino is ready to send data to the strip. See [AdaFruit's NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels) if you are not there yet.
